@@ -1,0 +1,57 @@
+@import '../common/variables.scss';
+
+.btn-custom {
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  color: #fff;
+  transition: $transition;
+  border: 2px solid $color-dark-blue;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-family: "Roboto-Med";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-dark-blue;
+    z-index: -2;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: $color-hover;
+    transition: $transition;
+    z-index: -1;
+  }
+  &:hover {
+    color: $color-dark-blue;
+    border: 2px solid $color-dark-blue;
+    &:before {
+      width: 100%;
+    }
+  }
+  &--trans {
+    border: 2px solid $color-dark-blue;
+    color: $color-dark-blue;
+    background-color: transparent;
+    &:after {
+      background-color: transparent;
+    }
+  }
+}

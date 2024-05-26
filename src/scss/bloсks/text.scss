@@ -1,0 +1,102 @@
+@import '../common/variables.scss';
+
+.text {
+  &--reg {
+    font-family: "Roboto-Reg", sans-serif;
+  }
+  &--med {
+    font-family: "Roboto-Med", sans-serif;
+  }
+  &--fs-12 {
+    font-size: 12px;
+  }
+  &--fs-14 {
+    font-size: 14px;
+  }
+  &--fs-16 {
+    font-size: 16px;
+  }
+  &--fs-18 {
+    font-size: 18px;
+  }
+  &--fs-36 {
+    font-size: 36px;
+  }
+  &--fs-50 {
+    font-size: 50px;
+  }
+  &--lh-18 {
+    line-height: 18px;
+  }
+  &--lh-24 {
+    line-height: 24px;
+  }
+  &--lh-26 {
+    line-height: 26px;
+  }
+  &--lh-30 {
+    line-height: 30px;
+  }
+  &--lh-36 {
+    line-height: 36px;
+  }
+  &--lh-66 {
+    line-height: 66px;
+  }
+}
+@media (max-width: 1400px) {
+  .text {
+    &--fs-36 {
+      font-size: 30px;
+    }
+    &--fs-50 {
+      font-size: 40px;
+    }
+    &--lh-18 {
+      line-height: 14px;
+    }
+    &--lh-24 {
+      line-height: 18px;
+    }
+    &--lh-26 {
+      line-height: 20px;
+    }
+    &--lh-30 {
+      line-height: 26px;
+    }
+    &--lh-36 {
+      line-height: 26px;
+    }
+    &--lh-66 {
+      line-height: 46px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .text {
+    &--fs-36 {
+      font-size: 28px;
+    }
+    &--fs-50 {
+      font-size: 36px;
+    }
+    &--lh-36 {
+      line-height: 22px;
+    }
+    &--lh-66 {
+      line-height: 46px;
+    }
+  }
+}
+.link {
+  font-family: "Roboto-Reg";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  &:hover {
+    color: $color-dark-blue;
+    scale: 110%;
+    transition: $transition;
+  }
+}
